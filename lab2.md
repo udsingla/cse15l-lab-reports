@@ -39,6 +39,8 @@ class StringServer {
     }
 }
 ```
+***
 
 This is when we start the server and give it the first input in the URL to `add-message`:
-![image](
+
+![image](stringserver1.png)
