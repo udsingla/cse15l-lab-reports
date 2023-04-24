@@ -58,7 +58,7 @@ When this URL is entered, the following take place:
 6. `str` then gets updated by adding the String at index 1 of `input` which is the same as the text after the `=` sign in the url, i.e. "hello"
 7. The method stops as the value of `str` is returned and gets displyed on the website.
 
-##
+***
 
 Then we enter another URL with a different message at the end after `=`:
 
