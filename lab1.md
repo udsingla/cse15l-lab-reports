@@ -33,6 +33,10 @@ Now you are successfully connected to the server.
 ## Step 3: Trying some Commands
 Try running the commands `cd`, `ls`, `pwd`, `mkdir`, and `cp` a few times in different ways, both on your computer, and on the remote computer after ssh-ing (use the terminal in VScode).
 
+These commands do the following:
+1. `cd` - It stands for Change Directory, using `cd` along with the name of the repository takes you to that repository. `cd` on its own takes you to the home directory. Since we are already on the home directory of the remote server, we do not see a change when we run cd.
+2. `cd ~` - It takes us to the home directory as well. The benefit of this over `cd` is that we can follow it with another repository name on the home directory to go directly to it. For example `cd ~/perl5`.
+
 To log out of the remote server in your terminal, you can use:\ 
 * Ctrl + D
 * Run the command `exit`.
