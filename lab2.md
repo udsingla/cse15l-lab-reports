@@ -93,4 +93,42 @@ Note: I had made 2 separate tests instead of adding both inputs under one test. 
   }
 ```
 
-### Output when the file containing above tests is run:
+### 3) Output when the file containing above tests is run:
+![image](output1.png)
+
+Explanation: The failure tells us that while matching the Arrays, it expected a '4', but the actual value was '0'.
+
+### 4) The before And After Of The Code:
+Before:
+```
+static int[] reversed(int[] arr) {
+    int[] newArray = new int[arr.length];
+    for(int i = 0; i < arr.length; i += 1) {
+      arr[i] = newArray[arr.length - i - 1];
+    }
+    return newArray;
+}
+```
+
+Bug: Here inside the for loop, after creating `newArray`, instead of copying the elements of the original Array into the new Array, we are copying the elements of new Array into the original array.
+
+Fix: Copy the values of original Array `arr` into the new Array `newArray` in reverse order.
+
+After:
+```
+static int[] reversed(int[] arr) {
+    int[] newArray = new int[arr.length];
+    for(int i = 0; i < arr.length; i += 1) {
+      newArray[i] = arr[arr.length - i - 1];
+    }
+    return newArray;
+}
+```
+
+Earlier, the new Array being created wasn't being updated and had the default values on being returned which is '0'. After the fix, each default value got replaced by the corresponding value in the original list in reverse order and as a result the Tests passed.
+
+***
+
+## Part 3
+
+Something that I learned in week 2 or 3 was how to build and run my own server both on my own computer as well as a remote computer. It was fun to learn how different servers can be created and can have different port numbers for individual versions of the server. I learned how we could affect the text and the memory of variables on the server by coding and using different URLs, which allowed us to create things like our own search engine. It was also interesting to use servers created by other students. 
