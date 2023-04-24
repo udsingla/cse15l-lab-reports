@@ -68,3 +68,29 @@ Then we enter another URL with a different message at the end after `=`:
 2. Since the URL is new, it is given as a new argument to URLHandler method and all the variables inside the method get reset.
 3. However the `str` value is already "hello" from the previous URL change since it was saved outside of the method.
 4. Following the same steps as above, the method reaches to add the current String after `=` in the URL ("how are you?") to the existing `str`. It also adds `"\n"` to the string which makes it appear in a new line which is why 'how are you?' gets displayed in the line below 'hello' after the value of `str` is returned.
+
+***
+
+## Part 2 - Testing and Bugs
+
+I am choosing the bug that is in `ArrayExamples.java` in the method `reversed` which supposed to return a new array with all the elements of the input array in reversed order.
+
+### 1) A failure inducing input for the buggy program:
+Note: I had made 2 separate tests instead of adding both inputs under one test. That is why it says `testReversed2()`
+```
+@Test
+  public void testReversed2(){
+    int[] input1 = {1, 2, 3, 4};
+    assertArrayEquals(new int[]{4, 3, 2, 1}, ArrayExamples.reversed(input1));
+  }
+```
+### 2) An input that does not induce failure:
+```
+@Test
+  public void testReversed() {
+    int[] input1 = { };
+    assertArrayEquals(new int[]{ }, ArrayExamples.reversed(input1));
+  }
+```
+
+### Output when the file containing above tests is run:
