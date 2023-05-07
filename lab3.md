@@ -156,4 +156,4 @@ In this example we search through every file in Alcohol_Problems directory. The 
 
 ***
 
-These were some of the command-line options for `grep`. These are very helpful in refining and making our searches more efficient and accurate. You can also use these options together for even more complex search operations.
+These were some of the command-line options for `grep`. These are very helpful in refining and making our searches more efficient and accurate. We can also use these options together for even more complex search operations.
