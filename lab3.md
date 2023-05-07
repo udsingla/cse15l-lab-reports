@@ -3,7 +3,7 @@
 I have chosen the command `grep` and researched command-line options for it.
 
 Following are the command-line options that I found and decided to include in the lab report:
-1. `-i` - The "-i" option in the grep command stands for "ignore case." When you use "-i" with grep, it makes the search case-insensitive, which means that the pattern or string you are searching for will match regardless of whether it is in upper case or lower case.
+* `-i` - The "-i" option in the grep command stands for "ignore case." When you use "-i" with grep, it makes the search case-insensitive, which means that the pattern or string you are searching for will match regardless of whether it is in upper case or lower case.
 
 It is useful when we want to find lines with a particular word which can have some characters capitalized depending if it is the first word in the line or in between.
 
@@ -35,7 +35,7 @@ In the above example, we search all the files in the 'Alcohol_Problems' director
 
 ***
 
-2. `-l` - The "-l" option in the grep command stands for "files with matches." When you use "-l" with grep, it prints only the names of the files that contain at least one matching line or pattern, rather than printing the actual matching lines.
+* `-l` - The "-l" option in the grep command stands for "files with matches." When you use "-l" with grep, it prints only the names of the files that contain at least one matching line or pattern, rather than printing the actual matching lines.
 
 This is useful when you want to quickly find out which files in a directory or a set of files contain a specific pattern, without having to manually search through each file.
 
@@ -66,7 +66,7 @@ When we search in only one file, it returns the path of that file if that file c
 
 ***
 
-3. `-c` - The "-c" option in the grep command stands for "count." When you use "-c" with grep, it prints only the count of the number of lines that match the pattern, rather than printing the actual matching lines.
+* `-c` - The "-c" option in the grep command stands for "count." When you use "-c" with grep, it prints only the count of the number of lines that match the pattern, rather than printing the actual matching lines.
 
 This is useful when you want to quickly find out how many lines in a file or a set of files contain a specific pattern, without having to manually count the number of lines.
 
@@ -89,7 +89,7 @@ When searching through all the files in a directory, it lists the path of every 
 
 ***
 
-4. `-v` - The "-v" option in the grep command stands for "invert match." When you use "-v" with grep, it prints only the lines that do not match the specified pattern, rather than printing the lines that do match.
+* `-v` - The "-v" option in the grep command stands for "invert match." When you use "-v" with grep, it prints only the lines that do not match the specified pattern, rather than printing the lines that do match.
 
 This is useful when you want to filter out lines with a certain string. 
 
