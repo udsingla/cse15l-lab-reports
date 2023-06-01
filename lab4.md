@@ -13,7 +13,7 @@ I will be writing the keystrokes I pressed to achieve the goal.
 
 ## Step 2: Clone your fork of the repository from your Github account
 ### keystrokes:
-* git clone `<paste>` `<enter>` \
+* git clone `<ctrl> + v`(v is added in codeblock as ctrl and v are pressed together)  `<enter>` \
 (I copy and pasted https://github.com/udsingla/lab7.git from github)
 * cd l `<tab> <enter>` \
 this autofills to lab7 and shifted me into the lab7 directory which just got cloned.
