@@ -16,6 +16,9 @@ A - I am failing a test in ListTests.java for ListExamples from week 3 lab (slig
 
 ![image](testerfile.png)
 
+**Q - Detail the failure-inducing input and context. That might mean any or all of the command you're running, a test case, command-line arguments, working directory, even the last few commands you ran. Do your best to provide as much context as you can.** \
+A - I am inputting list1 = [1, 4, 5]  and list2 = [2, 3, 7] and calling the merge function on it. I expect to see final list [1, 2, 3, 4, 5, 7] but I am getting [1, 2, 3, 4, 5, 5].
+
 ***
 
 ### 2) TA's reply:
@@ -30,3 +33,51 @@ I changed the last element of the first list to 6 instead of 5 and after running
 
 **Changed Test -**
 ![image](errordiff.png)
+
+**Changed Output -** \
+![image](changedterminal.png)
+
+**Identification of Bug -** \
+![image](highlighted.png) 
+
+To correct it we can just write `list2.get(index2)` instead of `list1.get(index2)`. 
+
+**Corrected code -** \
+![image](corrected.png)
+
+***
+
+### 4) All information required for setup:
+
+Bash script and terminal error output:
+![image](bashnterminal.png)
+
+Tester File:
+![image](testerfile.png)
+
+ListExamples.java:
+![image](ListExamples.png)
+
+File Structure: \
+![image](filestructure.png)
+
+**Command I used in terminal for error-**
+`bash grader.sh`
+
+![image](changedterminal.png)
+
+**To fix the bug -**
+We change `list1.get(index2)` to `list2.get(index2)` in ListExamples.java line 26
+
+This results in adding elements from list 2 when the elements of list 1 are over and we only need to copy remaining elements of list 2.
+
+**Bug -** \
+![image](highlighted.png)
+
+**Corrected code -** \
+![image](corrected.png)
+
+***
+
+## Part 2 - Reflection
+One thing that I learned in the second half of the course was writing bash scripts which led me to make autograder like scripts to run the tests on its own and check for any missing files and report the errors accordingly. It was really interesting to learn how it works and get an idea of how a tool runs which I have been using since the last 3 quarters for various CSE courses.
